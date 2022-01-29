@@ -35,7 +35,7 @@ public:
        goods_price[name] = newPrice;
    }
 
-   void sellProduct(std::string name)
+   void sellProduct(std::string name) override
    {
        if(goods_count[name] > 0)
        {
@@ -47,7 +47,7 @@ public:
        }
    }
 
-   void addProduct(std::string name, size_t count)
+   void addProduct(std::string name, size_t count) override
    {
        goods_count[name] += count;
    }
@@ -94,12 +94,12 @@ public:
        _realAutomaton->changePrice(name, newPrice);
    }
 
-   void sellProduct(std::string name)
+   void sellProduct(std::string name) override
    {
        _realAutomaton->sellProduct(name);
    }
 
-   void addProduct(std::string name, size_t count)
+   void addProduct(std::string name, size_t count) override
    {
        _realAutomaton->addProduct(name, count);
    }

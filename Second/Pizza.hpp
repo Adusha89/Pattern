@@ -10,6 +10,7 @@ public:
     virtual void bake() = 0;
     virtual void cut() = 0;
     virtual void box() = 0;
+    virtual ~Pizza(){};
 };
 
 class CheesePizza : public Pizza
@@ -34,40 +35,40 @@ class PepperoniPizza : public Pizza
     void box() override {};
 };
 
-class PizzaFactory
+class Factory
 {
 public:
-    virtual Pizza* createOrderPizza() = 0;
-    virtual ~PizzaFactory() {};
+    virtual Pizza* createOrder() = 0;
+    virtual ~Factory() {};
 };
 
-class CheesePizzaFactory : public PizzaFactory
+class CheesePizzaFactory : public Factory
 {
-    Pizza* createOrderPizza() override
+    Pizza* createOrder() override
     {
         return new CheesePizza;
     }
 };
 
-class GreekPizzaFactory : public PizzaFactory
+class GreekPizzaFactory : public Factory
 {
-    Pizza* createOrderPizza() override
+    Pizza* createOrder() override
     {
         return new GreekPizza;
     }
 };
 
-class PepperoniPizzaFactory : public PizzaFactory
+class PepperoniPizzaFactory : public Factory
 {
-    Pizza* createOrderPizza() override
+    Pizza* createOrder() override
     {
         return new PepperoniPizza;
     }
 };
 
-Pizza* orderPizza(PizzaFactory& factory)
+Pizza* orderPizza(Factory& factory)
 {
-   return factory.createOrderPizza();
+   return factory.createOrder();
 }
 
 #endif

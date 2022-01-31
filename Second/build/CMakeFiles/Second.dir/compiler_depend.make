@@ -171,8 +171,11 @@ CMakeFiles/Second.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/istream \
-  /usr/include/c++/9/bits/istream.tcc
+  /usr/include/c++/9/bits/istream.tcc \
+  ../Decorator.hpp
 
+
+../Decorator.hpp:
 
 /usr/include/c++/9/istream:
 

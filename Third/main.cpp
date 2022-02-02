@@ -5,9 +5,9 @@ int main(int argc, char const *argv[])
 {
     TextEditor text;
 
-    DivideByScreenWidth* BSW = new DivideByScreenWidth(55);
-    DivideBySentence* DBS = new DivideBySentence;
-    DivideByUserWidth* BUW = new DivideByUserWidth(45);
+    IDivideMethod* BSW = new DivideByScreenWidth;
+    IDivideMethod* DBS = new DivideBySentence;
+    IDivideMethod* BUW = new DivideByUserWidth;
 
     text.getDivide(BSW);
     text.useDivide();

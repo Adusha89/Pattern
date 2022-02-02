@@ -7,17 +7,15 @@
 class IDivideMethod
 {
 public:
-    virtual void Divide() = 0;
+    virtual void Divide(std::string&, size_t) = 0;
     virtual ~IDivideMethod(){};
 };
 
 class DivideByScreenWidth : public IDivideMethod
 {
 private:
-    size_t EditorWidth;
 public:
-    DivideByScreenWidth(size_t _EditorWidth) : EditorWidth(_EditorWidth){}
-    void Divide() override
+    void Divide(std::string& text, size_t EditorWidth) override
     {
         std::cout << "DivideByScreenWidth by screen width = " << EditorWidth << std::endl;
     }
@@ -26,7 +24,7 @@ public:
 class DivideBySentence : public IDivideMethod
 {
 public:
-    void Divide() override
+    void Divide(std::string& text, size_t EditorWidth) override
     {
         std::cout << "Divided by Sentences" << std::endl;
     }
@@ -34,13 +32,10 @@ public:
 
 class DivideByUserWidth : public IDivideMethod
 {
-private:
-    size_t userWidth;
 public:
-    DivideByUserWidth(size_t _userWidth) : userWidth(_userWidth){}
-    void Divide() override
+    void Divide(std::string& text, size_t EditorWidth) override
     {
-        std::cout << "DivideByScreenWidth by screen width = " << userWidth << std::endl;
+        std::cout << "DivideByScreenWidth by screen width = " << EditorWidth << std::endl;
     }
 };
 
@@ -84,7 +79,7 @@ public:
 
     void useDivide() override
     {
-        divide->Divide();
+        divide->Divide(all_text, 55);
     }
     
 };

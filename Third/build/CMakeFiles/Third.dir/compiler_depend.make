@@ -177,12 +177,50 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/9/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
-  /usr/include/c++/9/bits/fstream.tcc
+  /usr/include/c++/9/bits/fstream.tcc \
+  ../Iterator.hpp \
+  /usr/include/c++/9/list \
+  /usr/include/c++/9/bits/stl_list.h \
+  /usr/include/c++/9/bits/allocated_ptr.h \
+  /usr/include/c++/9/ext/aligned_buffer.h \
+  /usr/include/c++/9/bits/list.tcc \
+  /usr/include/c++/9/array \
+  /usr/include/c++/9/utility \
+  /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/vector \
+  /usr/include/c++/9/bits/stl_construct.h \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/vector.tcc \
+  /usr/include/c++/9/deque \
+  /usr/include/c++/9/bits/stl_deque.h \
+  /usr/include/c++/9/bits/deque.tcc
 
+
+/usr/include/c++/9/bits/deque.tcc:
+
+/usr/include/c++/9/bits/stl_deque.h:
+
+/usr/include/c++/9/deque:
+
+/usr/include/c++/9/vector:
+
+/usr/include/c++/9/array:
+
+/usr/include/c++/9/ext/aligned_buffer.h:
+
+/usr/include/c++/9/bits/allocated_ptr.h:
+
+/usr/include/c++/9/bits/stl_vector.h:
+
+/usr/include/c++/9/list:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h:
 
 /usr/include/c++/9/bits/codecvt.h:
+
+/usr/include/c++/9/bits/stl_relops.h:
 
 ../Strategy.hpp:
 
@@ -201,6 +239,8 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/system_error:
 
 /usr/include/c++/9/bits/locale_classes.tcc:
+
+/usr/include/c++/9/utility:
 
 /usr/include/c++/9/bits/basic_string.tcc:
 
@@ -248,6 +288,8 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/bits/nested_exception.h:
 
+../Iterator.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/c++/9/bits/allocator.h:
@@ -280,6 +322,8 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/exception:
 
+/usr/include/c++/9/bits/stl_construct.h:
+
 /usr/include/c++/9/bits/localefwd.h:
 
 /usr/include/ctype.h:
@@ -293,6 +337,8 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/debug/debug.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h:
+
+/usr/include/c++/9/bits/stl_list.h:
 
 /usr/include/c++/9/bits/ostream.tcc:
 
@@ -388,9 +434,13 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/pthread.h:
 
+/usr/include/c++/9/bits/vector.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
+
+/usr/include/c++/9/bits/list.tcc:
 
 /usr/include/c++/9/bits/stringfwd.h:
 
@@ -503,6 +553,10 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/c++/9/string:
+
+/usr/include/c++/9/bits/stl_bvector.h:
+
+/usr/include/c++/9/bits/stl_uninitialized.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:
 

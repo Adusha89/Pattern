@@ -179,7 +179,8 @@ CMakeFiles/Four.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/stl_bvector.h \
-  /usr/include/c++/9/bits/vector.tcc
+  /usr/include/c++/9/bits/vector.tcc \
+  ../Bridge.hpp
 
 
 /usr/include/c++/9/bits/stl_vector.h:
@@ -229,6 +230,8 @@ CMakeFiles/Four.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+../Bridge.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 

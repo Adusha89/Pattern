@@ -1,6 +1,7 @@
 #include <iostream>
 #include "FabricMethod.hpp"
 #include "Builder.hpp"
+#include "Bridge.hpp"
 
 int main(int argc, char const *argv[])
 {
@@ -16,5 +17,15 @@ int main(int argc, char const *argv[])
     d1->infoAboutDay();
     std::cout << "Second day: " << std::endl;
     d2->infoAboutDay();
+    std::cout << std::endl;
+
+    DrawingImplementor* draw = new DrawingWithBrush;
+    Shape* rec = new Rectangle(draw);
+    rec->draw(23);
+    delete rec;
+
+    rec = new Rectangle(new DrawingWithPencil);
+    rec->draw(24);
+    delete rec;
     return 0;
 }
